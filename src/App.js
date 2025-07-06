@@ -5,6 +5,7 @@ import Catalog from "./pages/catalog/catalog";
 import About from "./pages/about/about";
 import Lookbook from "./pages/lookbook/lookbook";
 import Sale from "./pages/sale/sale";
+import Product from "./pages/product/product";
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
                 <Route path="/sale" element={<Sale/>} />
                 <Route path="/lookbook" element={<Lookbook/>} />
                 <Route path="/about" element={<About/>} />
+                <Route path="/product/:name" element={<Product />} />
             </Routes>
         </BrowserRouter>
     );
