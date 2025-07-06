@@ -1,10 +1,24 @@
 import React from "react";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules';
 import "./product.css";
+import 'swiper/css';
+import 'swiper/css/navigation';
 
-function Product({ image, name, price, link }) {
+function Product({ images, name, price, link }) {
     return (
         <a className="item" href={link}>
-            <img className="Img" src={image} alt={name}/>
+            <Swiper
+                navigation={true}
+                modules={[Navigation]}
+                className="productSwiper"
+            >
+                {images.map((img, index) => (
+                    <SwiperSlide key={index}>
+                        <img className="Img" src={img} alt = "err"/>
+                    </SwiperSlide>
+                ))}
+            </Swiper>
             <div className="description">{name}</div>
             <div className="price">{"$" + price}</div>
         </a>

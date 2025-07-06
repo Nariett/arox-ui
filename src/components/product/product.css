@@ -27,3 +27,33 @@
     font-family: "HELVETICANEUEHEAVY", sans-serif;
     color: #000000;
 }
+
+.productSwiper {
+    overflow: hidden;
+}
+
+.productSwiper .swiper-button-prev,
+.productSwiper .swiper-button-next {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.productSwiper:hover .swiper-button-prev:not(.swiper-button-disabled),
+.productSwiper:hover .swiper-button-next:not(.swiper-button-disabled) {
+    opacity: 1;
+}
+
+.productSwiper .swiper-button-prev::after,
+.productSwiper .swiper-button-next::after {
+    color: #000000;
+    font-size: 24px;
+}
+
+.productSwiper .swiper-button-prev:hover::after,
+.productSwiper .swiper-button-next:hover::after {
+    color: #555555;
+}
+
+.productSwiper .swiper-button-disabled {
+    display: none !important;
+}

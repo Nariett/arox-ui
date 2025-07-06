@@ -11,19 +11,18 @@ import image6 from "../../image/runner-sneaker.jpg"
 import image7 from "../../image/track-sneaker.jpg";
 import image8 from "../../image/hike-sneaker.jpg"
 
-
 function Main() {
     return (
         <main className="Main">
             <div className="Grid">
-                <Product image={image1} name={"T-SHIRT «CRIMINAL BUSINESS»"} price={"85"} />
-                <Product image={image2} name={"BALACLAVA «JONY»"} price={"100"} />
-                <Product image={image3} name={"T-SHIRT «GERB»"} price={"85"} />
-                <Product image={image4} name={"BALACLAVA «SNIPER»"} price={"90"} />
-                <Product image={image5} name={"SNEAKER «NAVY»"} price={"85"} />
-                <Product image={image6} name={"SNEAKER «RUNNER»"} price={"100"} />
-                <Product image={image7} name={"SNEAKER «TRACK»"} price={"85"} />
-                <Product image={image8} name={"SNEAKER «HIKE RUNNER»"} price={"90"} />
+                <Product images={[image1, image2, image3]} name={"T-SHIRT «CRIMINAL BUSINESS»"} price={"85"} />
+                <Product images={[image2]} name={"BALACLAVA «JONY»"} price={"100"} />
+                <Product images={[image3]} name={"T-SHIRT «GERB»"} price={"85"} />
+                <Product images={[image4]} name={"BALACLAVA «SNIPER»"} price={"90"} />
+                <Product images={[image5]} name={"SNEAKER «NAVY»"} price={"85"} />
+                <Product images={[image6]} name={"SNEAKER «RUNNER»"} price={"100"} />
+                <Product images={[image7]} name={"SNEAKER «TRACK»"} price={"85"} />
+                <Product images={[image8]} name={"SNEAKER «HIKE RUNNER»"} price={"90"} />
             </div>
         </main>
     );
