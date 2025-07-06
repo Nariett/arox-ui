@@ -11,19 +11,16 @@ function Header() {
             <div className="Menu">
                 <ul>
                     <li>
-                        <a href="https://fuzzzadelic.com/sale">SALE</a>
+                        <Link to="/catalog">CATALOG</Link>
+                    </li>
+                    <li>
+                        <Link to="/sale">SALE</Link>
                     </li>
                     <li>
                         <Link to="/lookbook">LOOKBOOK</Link>
                     </li>
                     <li>
-                        <Link to="/contacts">CONTACTS</Link>
-                    </li>
-                    <li>
-                        <Link to="/bag">BAG</Link>
-                    </li>
-                    <li>
-                        <Link to="/currency">CURRENCY</Link>
+                        <Link to="/about">ABOUT</Link>
                     </li>
                 </ul>
             </div>

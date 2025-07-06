@@ -4,7 +4,7 @@ import "./footer.css";
 function Footer() {
     return (
         <footer className="Footer">
-            <p>AROX 2024</p>
+            <p className="name">AROX 2025</p>
         </footer>
     );
 }

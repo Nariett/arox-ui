@@ -1,11 +1,11 @@
 import React from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
-import "./product.css";
+import "./item.css";
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-function Product({ images, name, price, link }) {
+function Item({index, images, name, price, link }) {
     return (
         <a className="item" href={link}>
             <Swiper
@@ -25,4 +25,4 @@ function Product({ images, name, price, link }) {
     );
 }
 
-export default Product;
+export default Item;

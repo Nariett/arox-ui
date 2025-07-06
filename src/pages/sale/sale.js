@@ -1,13 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Header from "../../components/header/header";
 import Footer from "../../components/footer/footer";
-import Main from "../../components/main/main";
 
-export default function Home() {
+export default function Sale() {
     return (
         <div>
             <Header />
-            <Main />
+            <h1>Страница Sale</h1>
+            <Link to="/catalog">Вернуться на Главную</Link>
             <Footer />
         </div>
     );
