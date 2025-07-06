@@ -1,0 +1,29 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: "Pilowlava";
+    src: url("/public/fonts/Pilowlava-Regular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "HELVETICANEUENEUE";
+    src: url("/public/fonts/HELVETICANEUENEUE.OTF") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "HELVETICANEUEHEAVY";
+    src: url("/public/fonts/HELVETICANEUEHEAVY.OTF") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}

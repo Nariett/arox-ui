@@ -1,0 +1,10 @@
+.Main {
+    flex: 1;
+    background-color: #fff;
+}
+
+.Grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+}
