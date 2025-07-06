@@ -1,5 +1,6 @@
 import React from "react";
-import "./Header.css";
+import "./header.css";
+import { Link } from 'react-router-dom';
 
 function Header() {
     return (
@@ -13,16 +14,16 @@ function Header() {
                         <a href="https://fuzzzadelic.com/sale">SALE</a>
                     </li>
                     <li>
-                        <a>LOOKBOOK</a>
+                        <Link to="/lookbook">LOOKBOOK</Link>
                     </li>
                     <li>
-                        <a>CONTACTS</a>
+                        <Link to="/contacts">CONTACTS</Link>
                     </li>
                     <li>
-                        <a>BAG</a>
+                        <Link to="/bag">BAG</Link>
                     </li>
                     <li>
-                        <a>CURRENCY</a>
+                        <Link to="/currency">CURRENCY</Link>
                     </li>
                 </ul>
             </div>

@@ -2,6 +2,8 @@
     background-color: #ffff;
     width: 100%;
     position: relative;
+    user-select: none;
+    text-decoration: none;
 }
 
 .Img {
@@ -11,6 +13,7 @@
 }
 
 .description {
+    text-align: center;
     padding: 0 10px 10px;
     font-size: 1.3em;
     font-family: "HELVETICANEUEHEAVY", sans-serif;
@@ -18,6 +21,7 @@
 }
 
 .price {
+    text-align: center;
     padding: 0 10px 10px;
     font-size: 1em;
     font-family: "HELVETICANEUEHEAVY", sans-serif;
