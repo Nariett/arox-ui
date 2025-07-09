@@ -13,8 +13,8 @@ import Item from "../item/item";
 
 function Main() {
     return (
-        <main className="Main">
-            <div className="Grid">
+        <div className="main">
+            <div className="grid">
                 <Item index={1} images={[image1, image2, image3]} name={"T-SHIRT «CRIMINAL BUSINESS»"} price={"85"} />
                 <Item index={2} images={[image2]} name={"BALACLAVA «JONY»"} price={"100"} />
                 <Item index={3} images={[image3]} name={"T-SHIRT «GERB»"} price={"85"} />
@@ -24,7 +24,7 @@ function Main() {
                 <Item index={7} images={[image7]} name={"SNEAKER «TRACK»"} price={"85"} />
                 <Item index={8} images={[image8]} name={"SNEAKER «HIKE RUNNER»"} price={"90"} />
             </div>
-        </main>
+        </div>
     );
 }
 

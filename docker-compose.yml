@@ -1,6 +1,25 @@
 version: '3.8'
 services:
   app:
+    container_name: UI
     build: .
     ports:
       - "3000:3000"
+  postgres:
+    image: postgres:17-alpine
+    container_name: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: arox-db
+      TZ: UTC
+    ports:
+      - "8080:5432"
+    networks:
+      - app-networks
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+networks:
+  app-networks:
+volumes:
+  postgres_data:

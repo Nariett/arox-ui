@@ -3,7 +3,7 @@ import "./footer.css";
 
 function Footer() {
     return (
-        <footer className="Footer">
+        <footer className="footer">
             <p className="name">AROX 2025</p>
         </footer>
     );

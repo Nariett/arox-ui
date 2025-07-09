@@ -6,29 +6,29 @@ import "./item.css";
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-function Item({index, images, name, price, link }) {
+function Item({index, images, name, price}) {
     const navigate = useNavigate();
 
     const handleClick = () => {
-        navigate(`/product/id=${index}`);
+        navigate(`/product/${index}`);
     };
 
     return (
-        <a className="item" href={link} onClick={handleClick}>
-            <Swiper
-                navigation={true}
-                modules={[Navigation]}
-                className="productSwiper"
-            >
-                {images.map((img, index) => (
-                    <SwiperSlide key={index}>
-                        <img className="Img" src={img} alt = "err"/>
-                    </SwiperSlide>
-                ))}
-            </Swiper>
-            <div className="description">{name}</div>
-            <div className="price">{"$" + price}</div>
-        </a>
+        <div className="item">
+                <Swiper
+                    navigation={true}
+                    modules={[Navigation]}
+                    className="productSwiper"
+                >
+                    {images.map((img, index) => (
+                        <SwiperSlide key={index} onClick={handleClick}>
+                            <img className="img" src={img} alt = "err"/>
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+            <div className="description" onClick={handleClick}>{name}</div>
+            <div className="price" onClick={handleClick}>{"$" + price}</div>
+        </div>
     );
 }
 
