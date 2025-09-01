@@ -11,10 +11,9 @@ services:
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: arox-db
       TZ: UTC
     ports:
-      - "8080:5432"
+      - "5432:5432"
     networks:
       - app-networks
     volumes:

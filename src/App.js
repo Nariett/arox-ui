@@ -5,8 +5,12 @@ import About from "./pages/about/about";
 import Lookbook from "./pages/lookbook/lookbook";
 import Sale from "./pages/sale/sale";
 import Product from "./pages/product/product";
+import {useEffect} from "react";
 
 function App() {
+    useEffect(() => {
+        document.title = "arox";
+    },[])
     return (
         <BrowserRouter>
             <Routes>
